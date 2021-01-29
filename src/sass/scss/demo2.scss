@@ -1,0 +1,41 @@
+// each循环
+
+$arr:(1 red),(2 blue),(3 pink),(4 green),(5 yellow);
+
+@each $k, $v in $arr{
+    li:nth-child(#{$k}){
+        color: $v;
+    }
+}
+
+// 函数混合器,无参数
+
+// 定义
+@mixin f1{
+    transition: all 2s;
+}
+// 调用
+div{
+    @include f1
+}
+
+// 有参数 函数混合器
+@mixin f2($type, $time){
+    transition: $type $time;
+}
+
+span{
+    @include f2(width , 5s)
+}
+
+@mixin f3($type:all, $time:2s){
+    transition: $type $time;
+}
+
+h1{
+    @include f3(font-size)
+  
+}
+h2{
+    @include f3()
+}

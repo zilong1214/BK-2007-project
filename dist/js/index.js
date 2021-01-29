@@ -1,0 +1,1 @@
+"use strict";$('[name="loginOut"]').click(function(){mySetCookie("login",1,-1,"/")}),$('[name="cart"]').click(function(){void 0===myGetCookieObj().login?window.confirm("您还没有登录，点击确认进入登录页面")&&(window.location.href="../pages/login.html"):window.location.href="../pages/cart.html"});

@@ -1,0 +1,61 @@
+// 结构嵌套
+
+div{
+    width: 100px;
+    height: 100px;
+
+    >span{
+        color: red;
+    }
+
+    p{
+        color: blue;
+    }
+
+    +h1{
+        color: pink;
+    }
+
+    &:hover{
+        background: orange;
+    }
+}
+
+ul{
+    >li:nth-child(2){
+        color: blue;
+    }
+}
+
+// 属性的嵌套
+
+div{
+    margin: 100px
+    {
+        top:200px;
+    }
+    padding: 100px{
+        bottom: 50px;
+    };
+
+    border: 1px solid #000{
+        left: 2px solid red;
+    };
+};
+
+
+// 选择器的继承
+p{
+    width: 100px;
+    height: 100px;
+    background: pink;
+}
+
+div{
+    @extend p;
+    font-size: 100px;
+}
+
+// 导入其他文件
+@import './demo1.scss';
+@import './demo2.scss';

@@ -1,0 +1,42 @@
+
+// 变量
+$c:red;
+$b:blue;
+
+div{
+    color:$c;
+    border: 1px solid $c;
+    background: $c;
+}
+
+// if循环
+$int:1;
+div{
+    @if $int ==1{
+        color: $c;
+    }
+}
+p{
+    @if $int ==1{
+        color: $b;
+    }
+    @else{
+        color: $a;
+    }
+
+}
+
+// for循环
+@for $i from 1 to 5{
+    div{
+        width: $i*100px;
+        height: $i*100px;
+    }
+}
+
+@for $i from 1 through 5{
+    p{
+        width: $i*50px;
+        height: $i*50px;
+    }
+}
