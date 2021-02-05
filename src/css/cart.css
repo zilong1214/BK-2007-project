@@ -23,6 +23,11 @@
   height: 100px;
 }
 
+h1 {
+  text-align: center ;
+  font-size: 50px;
+  color: green;
+}
 h4 {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -34,4 +39,38 @@ h4 {
 p {
   font-size: 20px;
   color: red;
+}
+.container div>h1 .span1{
+  color: blue;
+  font-size: 50px;
+  font-family: '楷体';
+} 
+.container div>h1 .span2{
+  color: red;
+  font-size: 50px;
+  font-family: '楷体';
+} 
+/*左边 按钮 */
+.storeBtn{
+  position: fixed;
+  left: 50px;
+  top:50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+}
+
+.storeBtn>ul{
+  width: 100%;
+}
+
+.storeBtn>ul>li{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.storeBtn .btn-primary{
+  font-size: 25px;
 }

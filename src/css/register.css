@@ -34,8 +34,11 @@ a{
     font-size: 36px;
 }
 .main .top p{
-    font-size: 14px;
+    font-size: 16px;
     opacity: 0.6;
+}
+.main .top p a:hover{
+    color: red;
 }
 .main .center{
     padding: 10px 0 20px 30px;
@@ -87,10 +90,13 @@ a{
     text-align: center;
     margin-top: 20px;
     border-radius: 25px;
-    background-color: #BDCEFC;
+    background-color: #627cc5;
     border: none;
     color: #fff;
     font-size: 16px;
+}
+.main .center button:hover{
+    background: blue;
 }
 .main .center>.p1{
     font-size: 12px;

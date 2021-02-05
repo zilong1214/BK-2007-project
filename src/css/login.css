@@ -25,15 +25,17 @@ ul,ol,li{
     top:calc(50% - 200px);
 }
 .box p{
-    font-size: 16px;
-    color: blue;
+    font-size: 22px;
+    color: #000;
     text-align: center;
     margin: 30px auto;
+    font-family: '楷体';
+
 }
 .box input{
     width: 300px;
     height: 42px;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 50px;
     margin: 10px 30px 20px 30px;
     border: 1px solid #999;
     border-radius: 5px;
@@ -47,10 +49,31 @@ ul,ol,li{
     color: #fff;
     margin: 30px ;
     border: none;
+    font-family: '楷体';
+
 }
-.box a{
+.doc .box a{
     padding-left: 30px;
     font-size: 12px;
     padding-right: 10px;
     color: rgba(0, 0, 255, 0.815);
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+.doc .box .glyphicon-user,
+.doc .box .glyphicon-lock{
+    color: #999;
+    font-size: 16px;
+}
+.doc .box span{
+    position: relative;
+    left:-310px;
+}
+.doc .box .glyphicon-hand-right{
+    font-size: 16px;
+    color: blue
+}
+.doc .box a:hover{
+    color: red;
 }

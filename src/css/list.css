@@ -17,9 +17,53 @@ p {
   color: red;
 }
 
-.pagi {
+.page {
   width: 800px;
   height: 40px;
   border: 1px solid skyblue;
   margin: 30px auto;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(255, 0, 0, 0.747);
+  position: relative;
+  left: 25%;
+  transform: translateX(-5%);
+}
+
+.breadcrumb{
+  padding-left: 6px;
+  padding-right: 6px;
+}
+h1{
+  text-align: center ;
+  font-size: 50px;
+  color: green;
+}
+.box{
+  left:50%;
+  transform: translateX(-20%);
+}
+/*左边 按钮 */
+.storeBtn{
+  position: fixed;
+  left: 50px;
+  top:50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+}
+
+.storeBtn>ul{
+  width: 100%;
+}
+
+.storeBtn>ul>li{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.storeBtn .btn-primary{
+  font-size: 25px;
 }

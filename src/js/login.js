@@ -24,14 +24,13 @@ $('form').submit(()=>{
     // console.log(name)
     // console.log(pwd)
     $.ajax({
-        url:'../dit/server/login.php',
-        data:{name:name,pwd:pwd},
+        url:'../dit/server/goods_login.php',
+        data:{userName:name,userPwd:pwd},
         dataType:'json',
         type:'post',
         success:res=>{
             console.log(res)
-            console.log(res.login)
-            if(res.login === 1 ){
+            if(res.result === 1 ){
                 mySetCookie('login',1,24*60*60,'/');
                 window.alert('登录成功')
     
